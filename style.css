@@ -1,0 +1,11 @@
+@media screen and (min-width:992px) {
+    .banner {
+        background-color: #F85559;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .links {
+        color: black;
+    }
+}

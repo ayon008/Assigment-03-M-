@@ -7,100 +7,353 @@
     <title>Assignment 03</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e15cf1b09c.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="container">
     <header>
-        <section style="border-radius: 40px;" class="my-5 py-2 bg-danger">
-            <nav class="d-flex align-items-center justify-content-between text-white px-5">
-                <div>
-                    <ul class="d-flex align-items-center gap-3 mb-0 ms-0 ps-0" style="list-style: none;">
-                        <li>Home</li>
-                        <li>About Us </li>
-                        <li>Shop</li>
-                        <li>All Fruits</li>
-                    </ul>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                    <img src="./images/logo.png" alt="">
-                    <h4 class="mb-0">Fruits</h4>
-                </div>
-                <div>
-                    <input type="search" style="border-radius: 40px; border: none;" placeholder="search here"
-                        class="py-2 px-3">
+        <section style="border-radius: 50px;" class="my-5 py-2 banner">
+            <nav class="navbar navbar-expand-lg px-lg-4">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white links" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white links" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white links">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white links">All Items</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./images/logo.png" alt="">
+                        <h4 class="mb-0 text-white">Fruits</h4>
+                    </div>
+                    <form class="d-flex d-none d-lg-block" role="search">
+                        <input class="form-control me-2 px-3 py-2" style="border-radius: 50px;" type="search"
+                            placeholder="Search" aria-label="Search">
+                    </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                 </div>
             </nav>
         </section>
         <!-- Banner Section -->
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div
-                        style="background-image: url('./images/banner1.png'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh;">
-                        <div class="text-white d-flex align-items-center justify-content-center h-100">
-                            <div class="text-center" style="width: fit-content;height: fit-content;">
-                                <h1>Exotic tastes at your <br> doorstep</h1>
-                                <p>We supply highly quality organic products</p>
-                                <button class="btn btn-danger">
-                                    Shop Now
-                                </button>
+        <section class="position-relative">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div
+                            style="background-image: url('./images/banner1.png'),linear-gradient(to bottom, #111111, #555555); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh; background-blend-mode: overlay;">
+                            <div class="text-white d-flex align-items-center justify-content-center h-100">
+                                <div class="text-center" style="width: fit-content;height: fit-content;">
+                                    <h1>Exotic tastes at your <br> doorstep</h1>
+                                    <p>We supply highly quality organic products</p>
+                                    <button class="btn btn-danger">
+                                        Shop Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            style="background-image: url('./images/banner2.png'),linear-gradient(to bottom, #111111, #555555); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh; background-blend-mode: overlay;">
+                            <div class="text-white d-flex align-items-center justify-content-center h-100">
+                                <div class="text-center" style="width: fit-content;height: fit-content;">
+                                    <h1>Exotic tastes at your <br> doorstep</h1>
+                                    <p>We supply highly quality organic products</p>
+                                    <button class="btn btn-danger">
+                                        Shop Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            style="background-image: url('./images/banner3.png'),linear-gradient(to bottom, #111111, #555555); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh; background-blend-mode: overlay;">
+                            <div class="text-white d-flex align-items-center justify-content-center h-100">
+                                <div class="text-center" style="width: fit-content;height: fit-content;">
+                                    <h1>Exotic tastes at your <br> doorstep</h1>
+                                    <p>We supply highly quality organic products</p>
+                                    <button class="btn btn-danger">
+                                        Shop Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            style="background-image: url('./images/banner3.png'), linear-gradient(to bottom, #111111, #555555); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh; background-blend-mode: overlay;">
+                            <div class="text-white d-flex align-items-center justify-content-center h-100">
+                                <div class="text-center" style="width: fit-content;height: fit-content;">
+                                    <h1>Exotic tastes at your <br> doorstep</h1>
+                                    <p>We supply highly quality organic products</p>
+                                    <button class="btn btn-danger">
+                                        Shop Now
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div
-                        style="background-image: url('./images/banner2.png'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh;">
-                        <div class="text-white d-flex align-items-center justify-content-center h-100">
-                            <div class="text-center" style="width: fit-content;height: fit-content;">
-                                <h1>Exotic tastes at your <br> doorstep</h1>
-                                <p>We supply highly quality organic products</p>
-                                <button class="btn btn-danger">
-                                    Shop Now
-                                </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <section class="position-absolute w-75 shadow" style="top: 80%;left: 12%;right: 10%;">
+                <div class="d-flex align-items-center justify-content-between gap-3 w-100 bg-white px-5 py-4 rounded">
+                    <div>
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="text-center">Grapes</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="text-center">Oranges</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="text-center">Mango</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit4.png" alt="">
+                        <p class="text-center">Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit5.png" alt="">
+                        <p class="text-center">Pomegranate</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    <main class="my-5">
+        <!-- Deal of the day  -->
+        <section class="py-5">
+            <section class="mt-5">
+                <section class="pt-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="w-50">
+                            <h3>Deal Of the Day</h3>
+                            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of
+                                classical
+                                Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <div>
+                                <h1>29</h1>
+                                <p>Days</p>
+                            </div>
+                            <div>
+                                <h1>:</h1>
+                            </div>
+                            <div>
+                                <h1>15</h1>
+                                <p>Hours</p>
+                            </div>
+                            <div>
+                                <h1>:</h1>
+                            </div>
+                            <div>
+                                <h1>25</h1>
+                                <p>Minutes</p>
+                            </div>
+                            <div>
+                                <h1>:</h1>
+                            </div>
+                            <div>
+                                <h1>08</h1>
+                                <p>Seconds</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div
-                        style="background-image: url('./images/banner3.png'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh;">
-                        <div class="text-white d-flex align-items-center justify-content-center h-100">
-                            <div class="text-center" style="width: fit-content;height: fit-content;">
-                                <h1>Exotic tastes at your <br> doorstep</h1>
-                                <p>We supply highly quality organic products</p>
-                                <button class="btn btn-danger">
-                                    Shop Now
-                                </button>
+                    <div>
+                        <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="py-4 w-25 h-25 mx-auto">
+                                        <img src="./images/fruit6.png" class="card-img-top w-100"
+                                            style="height: 64.5px;" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-center mb-3">12.90$ - 18.85$</h5>
+                                        <hr>
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            <button
+                                                class="text-danger mt-4 border-0 bg-white w-50 mx-auto">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="py-4 w-25 h-25 mx-auto">
+                                        <img src="./images/fruit7.png" class="card-img-top w-100 h-100 " alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-center mb-3">12.90$ - 18.85$</h5>
+                                        <hr>
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            <button
+                                                class="text-danger mt-4 border-0 bg-white w-50 mx-auto">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="py-4 w-25 h-25 mx-auto">
+                                        <img src="./images/fruit8.png" class="card-img-top w-100 h-100 " alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-center mb-3">12.90$ - 18.85$</h5>
+                                        <hr>
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            <button
+                                                class="text-danger mt-4 border-0 bg-white w-50 mx-auto">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="py-4 w-25 h-25 mx-auto">
+                                        <img src="./images/fruit9.png" class="card-img-top w-100 h-100 " alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="text-center mb-3">12.90$ - 18.85$</h5>
+                                        <hr>
+                                        <div class="text-center">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            <button
+                                                class="text-danger mt-4 border-0 bg-white w-50 mx-auto">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div
-                        style="background-image: url('./images/banner3.png'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 75vh;">
-                        <div class="text-white d-flex align-items-center justify-content-center h-100">
-                            <div class="text-center" style="width: fit-content;height: fit-content;">
-                                <h1>Exotic tastes at your <br> doorstep</h1>
-                                <p>We supply highly quality organic products</p>
-                                <button class="btn btn-danger">
-                                    Shop Now
-                                </button>
+                    <div class="text-center mt-5">
+                        <button class="btn btn-danger">Show All</button>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- Meet the team section -->
+        <section
+            style="height: 100vh;background-image: url('./images/team.png'),linear-gradient(to bottom, #222222, #666666); background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: overlay;">
+            <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="text-white text-center" style="height: fit-content;">
+                    <div>
+                        <h1>Meet the team section</h1>
+                        <p class="w-75 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a
+                            piece of classical
+                            Latin
+                            literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="d-flex gap-5 text-center w-75 mx-auto align-items-center justify-content-between mt-2">
+                        <div>
+                            <img src="./images/member1.png" alt="">
+                            <h5 class="mt-2">Awlad Hossain</h5>
+                            <p>Fruit Expert</p>
+                            <div class="d-flex align-items-center gap-3 justify-content-center">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
                             </div>
                         </div>
+
+                        <div>
+                            <img src="./images/member2.png" alt="">
+                            <h5 class="mt-2">Safia Chowdhury</h5>
+                            <p>Fruit Expert</p>
+                            <div class="d-flex align-items-center gap-3 justify-content-center">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/member3.png" alt="">
+                            <h5 class="mt-2">Rakib Hossain</h5>
+                            <p>Fruit Expert</p>
+                            <div class="d-flex align-items-center gap-3 justify-content-center">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/member4.png" alt="">
+                            <h5 class="mt-2">Chaity</h5>
+                            <p>Fruit Expert</p>
+                            <div class="d-flex align-items-center gap-3 justify-content-center">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </header>
+        </section>
+
+        <!-- Why Chose Us Section -->
+        <section class="my-5">
+            <h1 class="text-center">Why Choose Us</h1>
+            <p class="text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </section>
+    </main>
 
 
 
