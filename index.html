@@ -34,7 +34,7 @@
                     </div>
                     <div class="d-flex align-items-center gap-2">
                         <img src="./images/logo.png" alt="">
-                        <h4 class="mb-0 text-white">Fruits</h4>
+                        <h4 class="mb-0 text-dark">Fruits</h4>
                     </div>
                     <form class="d-flex d-none d-lg-block" role="search">
                         <input class="form-control me-2 px-3 py-2" style="border-radius: 50px;" type="search"
@@ -121,7 +121,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <section class="position-absolute w-75 shadow" style="top: 80%;left: 12%;right: 10%;">
+            <section class="position-absolute d-none d-lg-block w-75 shadow" style="top: 80%;left: 12%;right: 10%;">
                 <div class="d-flex align-items-center justify-content-between gap-3 w-100 bg-white px-5 py-4 rounded">
                     <div>
                         <img src="./images/fruit1.png" alt="">
@@ -153,8 +153,8 @@
         <section class="py-5">
             <section class="mt-5">
                 <section class="pt-5">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="w-50">
+                    <div class="d-flex justify-content-between align-items-center flex-md-row flex-column gap-5">
+                        <div class="text-center text-md-start">
                             <h3>Deal Of the Day</h3>
                             <p>Contrary to popular belief, is not simply random text. It has roots in a piece of
                                 classical
@@ -297,8 +297,9 @@
         </section>
         <!-- Meet the team section -->
         <section
-            style="height: 100vh;background-image: url('./images/team.png'),linear-gradient(to bottom, #222222, #666666); background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: overlay;">
-            <div class="d-flex align-items-center justify-content-center h-100">
+            style="background-image: url('./images/team.png'),linear-gradient(to bottom, #222222, #666666); background-position: center;background-size: cover;background-repeat: no-repeat;background-blend-mode: overlay;"
+            class="vh-md-100 p-5">
+            <div class="d-md-flex align-items-md-center justify-content-md-center flex-md-row h-100">
                 <div class="text-white text-center" style="height: fit-content;">
                     <div>
                         <h1>Meet the team section</h1>
@@ -307,7 +308,8 @@
                             Latin
                             literature from 45 BC, making it over 2000 years old.</p>
                     </div>
-                    <div class="d-flex gap-5 text-center w-75 mx-auto align-items-center justify-content-between mt-2">
+                    <div
+                        class="d-flex flex-column flex-md-row text-center w-75 mx-auto align-items-center justify-content-between mt-5 gap-md-0 gap-4">
                         <div>
                             <img src="./images/member1.png" alt="">
                             <h5 class="mt-2">Awlad Hossain</h5>
@@ -360,10 +362,11 @@
             <h1 class="text-center">Why Choose Us</h1>
             <p class="text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of
                 classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-            <div class="row mt-5">
-                <div class="col-4">
-                    <div class="d-flex gap-3">
-                        <img src="./images/Group 46.png" style="height: 60px;" alt="">
+            <div class="row mt-5 gap-md-0 gap-5">
+                <div class="col-md-4 col-12 text-center text-md-start">
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                        <img src="./images/Group 46.png" style="height: 60px;width:fit-content;" class="mx-auto mx-md-0"
+                            alt="">
                         <div>
                             <h3 class="mb-2">Dedicated Team</h3>
                             <hr class="w-25">
@@ -372,8 +375,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex gap-3 my-3">
-                        <img src="./images/Group 46 (1).png" style="height: 60px;" alt="">
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                        <img src="./images/Group 46 (1).png" style="height: 60px; width:fit-content;"
+                            class="mx-auto mx-md-0" alt="">
                         <div>
                             <h3 class="mb-2">Fresh is Best</h3>
                             <hr class="w-25">
@@ -382,8 +386,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex gap-3">
-                        <img src="./images/Group 46 (2).png" style="height: 60px;" alt="">
+                    <div class="d-flex flex-column flex-md-row gap-3">
+                        <img src="./images/Group 46 (2).png" style="height: 60px;width:fit-content;"
+                            class="mx-auto mx-md-0" alt="">
                         <div>
                             <h3 class="mb-2">Gift Certificate</h3>
                             <hr class="w-25">
@@ -393,41 +398,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-12">
                     <img src="./images/whychoose1.png" class="w-100 h-100" alt="">
                 </div>
-                <div class="col-4">
-                    <div class="d-flex gap-3">
+                <div class="col-md-4 col-12 text-md-end text-center">
+                    <div class="d-flex flex-column flex-md-row gap-3">
                         <div>
                             <h3 class="mb-2">Dedicated Team</h3>
-                            <hr class="w-25">
+                            <hr class="w-25 ms-md-auto mx-auto">
                             <p class="mt-2">Professional employees are there for you to pick the most amazing and fresh
                                 fruits.
                             </p>
                         </div>
-                        <img src="./images/Group 46.png" style="height: 60px;" alt="">
+                        <img src="./images/Group 46.png" style="height: 60px;width: fit-content;" alt="">
                     </div>
-                    <div class="d-flex gap-3 my-3">
+                    <div class="d-flex flex-column flex-md-row gap-3">
 
                         <div>
                             <h3 class="mb-2">Fresh is Best</h3>
-                            <hr class="w-25">
+                            <hr class="w-25 ms-md-auto mx-auto">
                             <p class="mt-2">Professional employees are there for you to pick the most amazing and fresh
                                 fruits.
                             </p>
                         </div>
-                        <img src="./images/Group 46 (1).png" style="height: 60px;" alt="">
+                        <img src="./images/Group 46 (1).png" style="height: 60px;width:fit-content" alt="">
                     </div>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex flex-column flex-md-row gap-3">
 
                         <div>
                             <h3 class="mb-2">Gift Certificate</h3>
-                            <hr class="w-25">
+                            <hr class="w-25 ms-md-auto mx-auto">
                             <p class="mt-2">Professional employees are there for you to pick the most amazing and fresh
                                 fruits.
                             </p>
                         </div>
-                        <img src="./images/Group 46 (2).png" style="height: 60px;" alt="">
+                        <img src="./images/Group 46 (2).png" style="height: 60px;width:fit-content" alt="">
                     </div>
                 </div>
             </div>
@@ -454,7 +459,8 @@
                                     <li>My Account</li>
                                 </ul>
                             </div>
-                            <div class="mx-auto d-flex text-white gap-5" style="width: fit-content;">
+                            <div class="mx-md-auto mx-0 d-flex flex-wrap flex-md-nowwrap  text-white gap-5"
+                                style="width: fit-content;">
                                 <i class="fa-brands fa-twitter"></i>
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fa-brands fa-youtube"></i>
